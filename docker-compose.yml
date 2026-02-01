@@ -3,14 +3,14 @@ version: "3.8"
 services:
   postgres:
     image: postgres:16
-    container_name: cinehub-postgres
+    container_name: my-movies-stats
     restart: always
     ports:
       - 5432:5432
     environment:
-      POSTGRES_DB: cinehub
-      POSTGRES_USER: cineAdmin
-      POSTGRES_PASSWORD: aSdj2127@312311!@jsdaja
+      POSTGRES_DB: mymoviesstatss
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: aSdj21Admin
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
